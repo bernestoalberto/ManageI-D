@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+html, body								{ font-family: arial; }
+
+.html5fileupload .add, 
+.html5fileupload						{ background-color: #eeeeee; text-align: left; position: relative; border: 1px solid #dddddd; display: block; min-height: 55px; }
+.html5fileupload .add					{ border: none; background-color: #f3f3f3; }
+.html5fileupload .add:after,
+.html5fileupload:after					{ content: 'Arrastre la imagen o de click para agregar una!'; font-size: 21px; color: #bbbbbb; position: absolute; top: 10%; left: 0; width: 100%; text-align: center; z-index:0;}
+.html5fileupload .add:before,
+.html5fileupload:before					{ content: ''; font-family:"Glyphicons Halflings"; font-size: 60px; color: #dbdbdb; position: absolute; top: 20%; left: 0; width: 100%; text-align: center; z-index:0;}
+
+.html5fileupload.empty:after			{ content: '';}
+.html5fileupload.empty:before			{ content: '';}
+
+.html5fileupload.loading:after			{ content: 'Please wait, file is loading'; }
+.html5fileupload.loading:before			{ content: ''; }
+
+/* not valid mime */
+.html5fileupload.alert-danger			{ background-color: #f2dede; }
+.html5fileupload.alert-danger:after		{ content: ''; }
+.html5fileupload .notvalid				{ font-weight: bold; color: #d9534f; padding: 5px 110px 5px 5px;}
+
+/* multiple */
+.html5fileupload .multiple				{ position: relative; padding: 5px; background: #dddddd; text-align: right; }
+.html5fileupload .multiple > *			{ margin-left: 5px; }
+/* double */
+.html5fileupload .file.double			{ background: #fcf8e3;  } 
+
+
+/* preview */
+.html5fileupload .file					{ background-color: #eeeeee; min-height: 60px; position: relative; z-index:1; border-top: 1px solid #dddddd; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+.html5fileupload .file .preview			{ height: 50px; width: 50px; background-size: cover; background-position: center; background-color: white; float: left; vertical-align: middle; margin: 5px;   }
+.html5fileupload .file .inner			{ float: left; }
+.html5fileupload .file .input			{ padding: 5px 30px 5px 5px; position: relative;  }
+.html5fileupload .file .input input		{ padding-right: 0px;/*40px*/ }
+.html5fileupload .file .input .extension	{ position: absolute; top: 10%; right: 42px; color: #999;  }
+.html5fileupload .file .name			{ padding: 5px 30px 5px 5px; }
+.html5fileupload .file .size			{ font-size: 10px; color: #999999; padding: 0 30px 0px 5px; }
+.html5fileupload .progress				{ margin: 5px;}
+
+
+
+
+/* smaller */
+.html5fileupload.small .add,
+.html5fileupload.small					{ min-height: 35px; }
+.html5fileupload.small .btn				{ font-size: 12px; line-height: 1.5; border-radius: 3px; padding: 1px 5px;}
+.html5fileupload.small .add:after,
+.html5fileupload.small:after			{ font-size: 20px;}
+
+.html5fileupload.small .file			{ min-height: 40px;}
+.html5fileupload.small .file .preview	{ height: 30px; width: 30px; }
+
+.html5fileupload input[type=file]		{ position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; opacity: 0; cursor: pointer; z-index:2; height: 100% /* IE HACK*/ }
+.html5fileupload > input[type=text]		{ display: none; }
+
+.html5fileupload .progress				{ bottom: 10px; left: 10px; right: 10px; display: none;  }
+
+.html5fileupload .tools					{ position: absolute; top: 5px; right: 5px; z-index: 999; display: inline-block; }
+.html5fileupload .tools > *				{ margin: 0 0 0 5px; }
+
+.html5fileupload.smalltools .tools .btn	{ padding: 1px 4px; font-size: 12px; }
