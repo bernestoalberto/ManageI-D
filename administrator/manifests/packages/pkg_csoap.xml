@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" client="administrator" method="upgrade">
+	<name>PKG_CSOAP</name>
+	<packagename>csoap</packagename>
+	<version>0.4.5</version>
+	<creationDate>July 2012</creationDate>
+	<author>Conflate</author>
+	<authorEmail>info@conflate.nl</authorEmail>
+	<authorUrl>http://www.conflate.nl</authorUrl>
+	<url>http://www.conflate.nl</url>
+	<packager>Conflate</packager>
+	<packagerurl>http://www.conflate.nl/joomla-extensions/joomla-soap-integration.html</packagerurl>
+	<description>PKG_CSOAP_DESC</description>
+	<update>http://www.conflate.nl</update>
+	
+	<files folder="packages">
+		<file type="component" id="com_csoap" >com_csoap.zip</file>
+		<file type="library" id="nusoap" >lib_nusoap.zip</file>
+	</files>
+	
+	<languages>
+		<language tag="nl-NL">language/nl-NL.pkg_csoap.sys.ini</language>
+		<language tag="en-GB">language/en-GB.pkg_csoap.sys.ini</language>
+	</languages>
+	
+	<updateservers>
+        <server type="collection" priority="1" name="Conflate Extension Updates">http://www.conflate.nl/extensions/updates/conflate.xml</server>
+    </updateservers>
+</extension>
+

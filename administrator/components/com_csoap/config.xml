@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="soap" label="COM_CSOAP" description="COM_CSOAP_CONFIG_DESC">
+		<field name="class_delimiter" type="text" default="." size="5" label="COM_CSOAP_CONFIG_CLASS_DELIMITER" description="COM_CSOAP_CONFIG_CLASS_DELIMITER_DESC" />
+		<field name="static_delimiter" type="text" default=".." size="5" label="COM_CSOAP_CONFIG_STATIC_DELIMITER" description="COM_CSOAP_CONFIG_STATIC_DELIMITER_DESC" />
+	</fieldset>
+
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" validate="rules" filter="rules"	component="com_csoap" section="component" />
+	</fieldset>
+ </config>

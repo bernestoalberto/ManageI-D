@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.7/component-install.dtd">
+<extension type="library" version="2.5" method="upgrade">
+	<name>NuSOAP - SOAP Toolkit for PHP</name>
+	<libraryname>nusoap</libraryname>
+	<creationDate>July 2012</creationDate>
+	<author>Conflate (created the package)</author>
+	<authorEmail>info@conflate.nl</authorEmail>
+	<authorUrl>http://nusoap.sourceforge.net/</authorUrl>
+	<copyright>Copyright (c) 2012 Conflate</copyright>
+	<license>GNU Library or Lesser General Public License (LGPL)</license>
+	<version>0.9.5</version>
+	<description>NuSOAP is a rewrite of SOAPx4, provided by NuSphere and Dietrich Ayala. It is a set of PHP classes - no PHP extensions required - that allow developers to create and consume web services based on SOAP 1.1, WSDL 1.1 and HTTP 1.0/1.1.</description>
+	<files>
+		<filename>nusoap.php</filename>
+		<filename>index.html</filename>
+	</files>
+		
+
+</extension>

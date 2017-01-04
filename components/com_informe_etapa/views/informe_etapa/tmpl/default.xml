@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+		<layout title="Componente de Gestion de Informeetapa">
+				<message>
+				<![CDATA[Componente creado por Ernesto]]>
+				</message>
+		</layout>
+		<state>
+			<name>Componente de Gestion de Informeetapa</name>
+			<description>Componente de Gestion de Informeetapa</description>
+			<url>
+			</url>
+			<params>
+			</params>
+			<advanced>
+			</advanced>
+			</state>
+</metadata>

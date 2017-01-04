@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.7/component-install.dtd">
+<install type="component" version="2.5" method="upgrade">
+	<name>COM_CSOAP</name>
+	<creationDate>July 2012</creationDate>
+	<author>Conflate</author>
+	<authorEmail>info@conflate.nl</authorEmail>
+	<authorUrl>http://www.conflate.nl</authorUrl>
+	<copyright>Copyright (c) 2012 Conflate</copyright>
+	<license>This component in released under the GNU/GPL v3 or later license</license>
+	<version>1.0</version>
+	<description>COM_CSOAP_DESC</description>
+	
+	<scriptfile>install.php</scriptfile>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>		
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<files folder="site">
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>classes</folder>
+		<filename>csoap.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>controller.php</filename>
+	</files>
+	
+	<administration>
+		<menu img="components/com_csoap/assets/images/icon-16-conflate-ext.png">COM_CSOAP</menu>
+		<files folder="admin">
+			<filename>csoap.php</filename>
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>controller.php</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>assets</folder>
+			<folder>tables</folder>
+		</files>
+		
+		<languages folder="admin">
+			<language tag="nl-NL">language/nl-NL.com_csoap.ini</language>
+			<language tag="nl-NL">language/nl-NL.com_csoap.sys.ini</language>
+			<language tag="en-GB">language/en-GB.com_csoap.ini</language>
+			<language tag="en-GB">language/en-GB.com_csoap.sys.ini</language>
+		</languages>
+	</administration>
+</install>

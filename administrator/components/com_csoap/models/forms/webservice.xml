@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+	
+		<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+			readonly="true" class="readonly"
+			description="JGLOBAL_FIELD_ID_DESC"/>
+		
+		<field name="title" type="text" label="JGLOBAL_TITLE"
+			description="JFIELD_TITLE_DESC" class="inputbox" size="30"
+			required="true" />
+
+		<field name="alias" type="text" label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC" class="inputbox" size="45" />
+			
+		<field name="namespace" type="text" label="COM_CSOAP_NAMESPACE"
+			description="COM_CSOAP_NAMESPACE_DESC" class="inputbox" size="45" required="true" />
+		
+		<field name="state"	type="list"	label="JSTATUS"	description="JSTATUS_DESC"
+			class="inputbox" size="1" default="1">
+			<option	value="1">JPUBLISHED</option>
+			<option	value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option	value="-2">JTRASHED</option>
+		</field>
+
+		<field name="ordering" type="Ordering" class="inputbox"
+			label="JFIELD_ORDERING_LABEL"
+			description="JFIELD_ORDERING_DESC" />
+			
+		<field name="created" type="calendar"
+			label="JGLOBAL_FIELD_CREATED_LABEL" description="JGLOBAL_FIELD_CREATED_DESC"
+			class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" />
+
+		<field name="created_by" type="user"
+			label="JGLOBAL_FIELD_CREATED_BY_LABEL" description="JGLOBAL_FIELD_CREATED_BY_Desc" />
+
+		<field name="created_by_alias" type="text"
+			label="JGLOBAL_FIELD_CREATED_BY_ALIAS_LABEL" description="JGLOBAL_FIELD_CREATED_BY_ALIAS_DESC"
+			class="inputbox" size="20" />
+
+		<field name="modified" type="calendar" class="readonly"
+			label="JGLOBAL_FIELD_MODIFIED_LABEL" description="COM_WEBLINKS_FIELD_MODIFIED_DESC"
+			size="22" readonly="true" format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" />
+
+		<field name="modified_by" type="user"
+			label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+			class="readonly"
+			readonly="true"
+			filter="unset"  />
+
+		<field name="checked_out" type="hidden" filter="unset" />
+
+		<field name="checked_out_time" type="hidden" filter="unset" />
+
+		<field name="publish_up" type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_UP_LABEL" description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" />
+
+		<field name="publish_down" type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL" description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" />
+
+	</fieldset>
+	
+	<fields name="params">
+		<fieldset name="basic" label="COM_CSOAP_PARAMS_BASIC">
+		
+			<field name="plugins" type="plugins" folder="soap" size="5" default="" multiple="true" label="COM_CSOAP_PARAMS_PLUGIN_ASSIGNMENT" description="COM_CSOAP_PARAMS_PLUGIN_ASSIGNMENT_DESC" />
+			
+			<field name="style" type="list" label="COM_CSOAP_PARAMS_STYLE" description="COM_CSOAP_PARAMS_STYLE_DESC" size="1" default="0">
+				<option	value="0">COM_CSOAP_PARAMS_STYLE_RPC</option>
+				<option	value="1">COM_CSOAP_PARAMS_STYLE_DOCUMENT</option>
+			</field>xml_encoding_utf8
+			
+			<field name="xml_encoding_utf8" type="radio" label="COM_CSOAP_PARAMS_UTF8_ENCODING" description="COM_CSOAP_PARAMS_UTF8_ENCODING_DESC" default="0">
+				<option	value="0">JNO</option>
+				<option	value="1">JYES</option>
+			</field>
+			
+			<field name="authentication" type="list" label="COM_CSOAP_PARAMS_AUTHENTICATION" description="COM_CSOAP_PARAMS_AUTHENTICATION_DESC" size="1" default="1">
+				<option	value="0">COM_CSOAP_PARAMS_AUTHENTICATION_NONE</option>
+				<option	value="1">COM_CSOAP_PARAMS_AUTHENTICATION_MANUAL</option>
+				<option	value="2">COM_CSOAP_PARAMS_AUTHENTICATION_USER</option>
+				<option	value="3">COM_CSOAP_PARAMS_AUTHENTICATION_VIEWING_LEVEL</option>
+			</field>
+			<field name="authentication_type" type="list" label="COM_CSOAP_PARAMS_AUTHENTICATION_TYPE" description="COM_CSOAP_PARAMS_AUTHENTICATION_TYPE_DESC" size="1" default="0">
+				<option	value="0">COM_CSOAP_PARAMS_AUTHENTICATION_TYPE_BASIC</option>
+			</field>
+		
+			<field type="spacer" label="COM_CSOAP_PARAMS_AUTHENTICATION_MANUAL" />
+			<field name="username" type="text" default="" label="COM_CSOAP_PARAMS_USERNAME" description="COM_CSOAP_PARAMS_USERNAME_DESC" />
+			<field name="password" type="password" default="" label="COM_CSOAP_PARAMS_PASSWORD" description="COM_CSOAP_PARAMS_PASSWORD_DESC" />
+			
+			<field type="spacer" label="COM_CSOAP_PARAMS_AUTHENTICATION_USER" />
+			<field name="juserid" type="user" default="" label="COM_CSOAP_PARAMS_JOOMLA_USER" description="COM_CSOAP_PARAMS_JOOMLA_USER_DESC" />
+			
+			<field type="spacer" label="COM_CSOAP_PARAMS_AUTHENTICATION_VIEWING_LEVEL" />
+			<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL" description="JFIELD_ACCESS_DESC" class="inputbox" />
+
+		</fieldset>
+	</fields>
+
+</form>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+		<layout title="Componente de financiamiento_programa_proyecto">
+				<message>
+				<![CDATA[Componente creado por Ernesto]]>
+				</message>
+		</layout>
+		<state>
+			<name>Componente de financiamiento_programa_proyecto</name>
+			<description>Componente definanciamiento_programa_proyecto</description>
+			<url>
+			</url>
+			<params>
+			</params>
+			<advanced>
+			</advanced>
+			</state>
+</metadata>

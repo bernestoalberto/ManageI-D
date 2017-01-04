@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="core" label="COM_USERS_PROFILE_DEFAULT_LABEL">
+		<field
+			name="id"
+			type="hidden"
+			filter="integer"
+		/>
+
+		<field
+			name="name"
+			type="text"
+			description="COM_USERS_PROFILE_NAME_DESC"
+			filter="string"
+			label="COM_USERS_PROFILE_NAME_LABEL"
+			required="true"
+			size="30"
+		/>
+
+		<field
+			name="username"
+			type="text"
+			class="validate-username"
+			description="COM_USERS_DESIRED_USERNAME"
+			filter="username"
+			label="COM_USERS_PROFILE_USERNAME_LABEL"
+			message="COM_USERS_PROFILE_USERNAME_MESSAGE"
+			required="true"
+			size="30"
+			validate="username"
+		/>
+
+		<field
+			name="password1"
+			type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="COM_USERS_DESIRED_PASSWORD"
+			filter="raw"
+			label="COM_USERS_PROFILE_PASSWORD1_LABEL"
+			size="30"
+			validate="password"
+		/>
+
+		<field
+			name="password2"
+			type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="COM_USERS_PROFILE_PASSWORD2_DESC"
+			field="password1"
+			filter="raw"
+			label="COM_USERS_PROFILE_PASSWORD2_LABEL"
+			message="COM_USERS_PROFILE_PASSWORD1_MESSAGE"
+			size="30"
+			validate="equals"
+		/>
+
+		<field
+			name="email1"
+			type="email"
+			description="COM_USERS_PROFILE_EMAIL1_DESC"
+			filter="string"
+			label="COM_USERS_PROFILE_EMAIL1_LABEL"
+			message="COM_USERS_PROFILE_EMAIL1_MESSAGE"
+			required="true"
+			size="30"
+			unique="true"
+			validate="email"
+		/>
+
+		<field
+			name="email2"
+			type="email"
+			description="COM_USERS_PROFILE_EMAIL2_DESC"
+			field="email1"
+			filter="string"
+			label="COM_USERS_PROFILE_EMAIL2_LABEL"
+			message="COM_USERS_PROFILE_EMAIL2_MESSAGE"
+			required="true"
+			size="30"
+			validate="equals"
+		/>
+		
+		
+		<field
+				name="dni"
+				type="number"
+				class="btn-group btn-group-yesno"
+				label="DNI"
+				description ="JGLOBAL_FIELD_DNI_DESC"
+				min="0"
+				maxlenght="11"
+				required="true"
+
+
+		/>
+		<field
+				name="direccion"
+				type="text"
+				class="btn-group btn-group-yesno"
+				label="Direccion"
+				description ="JGLOBAL_FIELD_direccion_DESC"
+               size = "50"
+				required="true"
+
+		/>
+
+
+		<field
+				name="telefono"
+				type="number"
+				class="btn-group btn-group-yesno"
+				label="Telefono"
+				min="0"
+				description ="JGLOBAL_FIELD_telefono_DESC"
+
+		/>
+		<field
+				name="movil"
+				type="number"
+				class="btn-group btn-group-yesno"
+				min="0"
+				label="Movil"
+				description ="JGLOBAL_FIELD_movil_DESC"
+
+		/>
+		<field
+				name="foto"
+				type="file"
+				class="btn-group btn-group-yesno"
+				label="Foto"
+				description ="JGLOBAL_FIELD_foto_DESC"
+
+		/>
+
+	</fieldset>
+	
+	<!-- Used to get the two factor authentication configuration -->
+	<field
+		name="twofactor"
+		type="hidden"
+	/>
+</form>

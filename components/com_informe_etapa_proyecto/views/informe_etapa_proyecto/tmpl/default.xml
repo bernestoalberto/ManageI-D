@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+		<layout title="Componente de rep_informe_etapa_proyecto">
+				<message>
+				<![CDATA[Componente creado por Ernesto]]>
+				</message>
+		</layout>
+		<state>
+			<name>Componente de rep_informe_etapa_proyecto</name>
+			<description>Componente de rep_informe_etapa_proyecto</description>
+			<url>
+			</url>
+			<params>
+			</params>
+			<advanced>
+			</advanced>
+			</state>
+</metadata>

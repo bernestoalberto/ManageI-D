@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+<name>Entidad</name>
+<creationDate>10-dic-2015 7:34:42</creationDate>
+             <author>Ernesto</author>
+             <authorEmail>bernestoalberto@gmail.com</authorEmail>
+             <authorUrl></authorUrl>
+             <copyright>Copyright Info</copyright>
+             <license>License Info</license>
+          	<!--  The version string is recorded in the components table -->
+       	<version>1.1</version>
+       	<!-- The description is optional and defaults to the name -->
+       	<description>Componente de Entidad</description>
+<files>
+		<filename>controller.php</filename>
+		<filename>Entidad.php</filename>
+		<filename>index.html</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		  <folder>assets</folder>
+	 	</files>
+<administration>
+</administration>
+</extension>
